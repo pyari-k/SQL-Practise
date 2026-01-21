@@ -1,5 +1,7 @@
 # PostgreSQL Cheatsheet
 
+### Back to basics :)
+
 This repository serves as a personal cheatsheet and practice ground for PostgreSQL queries and concepts.
 
 ## Contents
