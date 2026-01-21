@@ -18,3 +18,6 @@ INSERT INTO customers (customer_id, customer_name, region) VALUES (24, 'Customer
 INSERT INTO customers (customer_id, customer_name, region) VALUES (25, 'Customer_25', 'Midwest');
 INSERT INTO customers (customer_id, customer_name, region) VALUES (26, 'Customer_26', 'North');
 INSERT INTO customers (customer_id, customer_name, region) VALUES (27, 'Customer_27', 'West');
+INSERT INTO customers (customer_id, customer_name, region) VALUES (50, 'Inactive Ian', 'North');
+INSERT INTO customers (customer_id, customer_name, region) VALUES (51, 'Lazy Larry', 'South');
+INSERT INTO customers (customer_id, customer_name, region) VALUES (52, 'Quiet Quinn', 'East');
