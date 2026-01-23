@@ -1,6 +1,6 @@
-# SQL Practice Sandbox
+# SQL Practice Sandbox and Cheatsheets
 
-This repository is a self-contained sandbox for practicing SQL queries using PostgreSQL. It includes various sample tables, data, and practice problems, all organized into clear directories.
+This repository is a self-contained sandbox for practicing SQL queries using PostgreSQL. It includes various sample tables, data, practice problems, and SQL cheatsheets, all organized into clear directories.
 
 The environment is managed by Docker Compose, which will automatically create a PostgreSQL database named `postgresql_sandbox` and pre-load all the data for you.
 
@@ -68,7 +68,7 @@ You are now ready to explore the data and write your own queries!
 - **`load-data.yml`:** An override file for `docker-compose` that adds the configuration to load the sample data.
 - **`sample_data/`:** Contains all the raw `.sql` files for creating tables (`create_...`) and inserting data (`insert_...`). This folder is used to initialize the database when using `load-data.yml`.
 - **`practice_problems/`:** Contains folders for specific practice problems, each with a `question.md` and an `answer.sql`.
-- **`example_queries/`:** Contains various other standalone SQL query examples.
+- **[`cheatsheets/`](./cheatsheets):** Contains various SQL query cheatsheets and examples.
 
 ## Managing the Environment
 
@@ -87,3 +87,7 @@ From the repository root directory:
   ```bash
   docker-compose down -v
   ```
+
+## Credits
+
+This repo was inspired by the popular [Northwind for PostgreSQL](https://github.com/pthom/northwind_psql) repo.
