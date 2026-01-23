@@ -1,0 +1,4 @@
+services:
+  db:
+    volumes:
+      - ./sample_data:/docker-entrypoint-initdb.d
