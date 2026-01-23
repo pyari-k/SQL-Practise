@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:latest
+    container_name: postgresql_sandbox_db
+    environment:
+      POSTGRES_PASSWORD: mysecretpassword # *** PLEASE CHANGE THIS PASSWORD ***
+      POSTGRES_DB: postgresql_sandbox
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql
+      - ./sample_data:/docker-entrypoint-initdb.d
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d postgresql_sandbox"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  pgdata:
