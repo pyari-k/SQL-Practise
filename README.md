@@ -47,17 +47,17 @@ If you loaded the sample data, you can ensure everything is working correctly by
 
 ```sql
 SELECT song, artist, country
-FROM music
+FROM music_data
 LIMIT 3;
 ```
 
 You should see the following output:
 ```
-| song      | artist   | country |
-|-----------|----------|---------|
-| Song_A    | Artist_X | USA     |
-| Song_B    | Artist_Y | Canada  |
-| Song_C    | Artist_Z | UK      |
+| song             | artist            | country     |
+|------------------|-------------------|-------------|
+| Rockstar         | Post Malone       | Germany     |
+| Hotel California | Eagles            | South Korea |
+| Closer           | The Chainsmokers  | Australia   |
 ```
 
 You are now ready to explore the data and write your own queries!
