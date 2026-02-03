@@ -16,6 +16,20 @@ This tiny SQL sandbox is made to eliminate the "setup headache" and provides a q
     docker-compose -f docker-compose.yml -f load-data.yml up -d
     ```
 
+### Connect to the Database
+
+Use your favorite SQL client (DBeaver, DataGrip, pgAdmin, etc.) to connect to the database with the following credentials:
+
+| Setting    | Value                 |
+|------------|-----------------------|
+| **Host**   | `localhost`           |
+| **Port**   | `5432`                |
+| **Database**| `postgresql_sandbox`  |
+| **Username**| `postgres`            |
+| **Password**| `mysecretpassword`    |
+
+*(Note: The password is set in the `docker-compose.yml` file and can be changed there if desired.)*
+
 ### SQL Cheatsheets
 
 Explore the `cheatsheets/` directory for various SQL query examples and common patterns.
